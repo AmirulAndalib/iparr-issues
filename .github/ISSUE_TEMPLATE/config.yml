@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Suggest a feature
+    url: https://github.com/AmirulAndalib/iparr-issues/discussions/new?category=ideas
+    about: Ideas and improvements go to Discussions so others can vote on them.
+  - name: Ask a question
+    url: https://github.com/AmirulAndalib/iparr-issues/discussions/new?category=q-a
+    about: Help with adding the repo, the bot or alerts.
+  - name: IPARR website
+    url: https://iparr.amirulandalib.eu.org
+    about: Search apps and get the merged repo links.
+  - name: IPARR Telegram bot
+    url: https://t.me/IPArrBOT
+    about: Update alerts in a DM, channel or group.

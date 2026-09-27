@@ -1,0 +1,30 @@
+name: Source request
+description: Suggest an IPA repo that IPARR should watch.
+labels: ["source"]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: Repo URL
+      description: The JSON link you would add to AltStore, SideStore, Feather, ESign or KSign.
+      placeholder: https://example.com/repo.json
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Name of the source
+  - type: textarea
+    id: why
+    attributes:
+      label: What does it have?
+      description: The kind of apps or tweaks it publishes, and anything else worth knowing.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: It serves IPA files, not jailbreak .deb packages.
+          required: true
+        - label: I searched the IPARR sources page and it isn't listed yet.
+          required: true

@@ -1,0 +1,38 @@
+name: Bug report
+description: Something on the website, in the bot or in a repo feed doesn't work.
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where did it happen?
+      options:
+        - Website
+        - Telegram bot
+        - Repo feed in a signer (repo.json, lite or AltStore)
+        - Update alerts
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what you got instead. Paste the exact error text if there is one.
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Link
+      description: The page, app or feed URL involved, if any.
+      placeholder: https://iparr.amirulandalib.eu.org/app/...
+  - type: input
+    id: client
+    attributes:
+      label: Signer, browser or app
+      description: For example Feather 2.x, SideStore 0.6, Safari on iOS 18, Telegram for Android.
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots or anything else
